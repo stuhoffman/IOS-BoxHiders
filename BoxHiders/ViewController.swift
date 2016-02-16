@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var RedBox: UIImageView!
+    @IBOutlet var BlueBox: UIImageView!
+    @IBAction func hideRedBox(sender: AnyObject) {
+        RedBox.hidden = true
+    }
+    @IBAction func hideBlueBox(sender: AnyObject) {
+        BlueBox.hidden = true
+    }
+    @IBAction func showAllBoxes(sender: AnyObject) {
+        RedBox.hidden = false
+        BlueBox.hidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

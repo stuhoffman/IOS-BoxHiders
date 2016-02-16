@@ -23,10 +23,16 @@
                                 <state key="normal" title="Hide Red" backgroundImage="RedBox_100_100">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="hideRedBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uqt-Bh-JeA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBX-dU-TnB">
                                 <rect key="frame" x="280" y="362" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="showAllBoxes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OuF-Mz-pja"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BlueBox_100_100" translatesAutoresizingMaskIntoConstraints="NO" id="lm9-sn-RvZ">
                                 <rect key="frame" x="150" y="78" width="100" height="100"/>
@@ -39,6 +45,9 @@
                                 <state key="normal" title="Hide Blue" backgroundImage="BlueBox_100_100">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="hideBlueBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4d6-T0-pUC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,6 +59,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fSY-ht-hFw" secondAttribute="trailing" constant="-9" id="oJe-hk-Qu0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BlueBox" destination="lm9-sn-RvZ" id="Ah7-dw-x3N"/>
+                        <outlet property="RedBox" destination="fSY-ht-hFw" id="pnj-KP-u5D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
