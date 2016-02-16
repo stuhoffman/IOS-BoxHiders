@@ -61,7 +61,9 @@
                     </view>
                     <connections>
                         <outlet property="BlueBox" destination="lm9-sn-RvZ" id="Ah7-dw-x3N"/>
+                        <outlet property="BlueButton" destination="JGA-ts-5Em" id="B9Z-yt-tGS"/>
                         <outlet property="RedBox" destination="fSY-ht-hFw" id="pnj-KP-u5D"/>
+                        <outlet property="RedButton" destination="MQl-DB-Q6f" id="hTZ-uX-rbc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
